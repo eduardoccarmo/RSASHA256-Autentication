@@ -1,5 +1,4 @@
-﻿using ConsoleApp3.Configurations;
-using ConsoleApp3.Services;
+﻿using ConsoleApp3.Services;
 
 class Program
 {
@@ -7,7 +6,7 @@ class Program
     {
         Console.ForegroundColor = ConsoleColor.Green;
 
-        string path = @"Inserir caminho do arquivo";
+        string path = @"C:\Users\eduar\OneDrive\Área de Trabalho\ContaServicoUnico\svcaccene_c45251d5-7eeb-438e-bba8-54d511ba5d0d.key.pem";
         var privateKey = File.ReadAllText(path);
         var httpClient = new HttpClient();
 
